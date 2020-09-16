@@ -4,6 +4,9 @@
 
 FROM python:3.8-slim
 
+VOLUME /src
+WORKDIR /src
+
 # copy in the requirements
 COPY requirements.txt /src/requirements.txt
 
@@ -11,7 +14,4 @@ RUN apt-get update && \
     apt-get install -y git && \
     apt-get clean && \
     pip install -r /src/requirements.txt 
-
-VOLUME /src
-WORKDIR /src
 
