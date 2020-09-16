@@ -32,10 +32,7 @@ jobs:
           architecture: x64
       - name: Install Dependencies
         run: |
-          pip install pytest
-          pip install pytest-cov
-          pip install confuse
-          pip install lxml==4.5
+          pip install -r requirements.txt
       - name: Checkout py-mmd-tools
         uses: actions/checkout@v2
       - name: Run Tests
