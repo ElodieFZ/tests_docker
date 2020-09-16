@@ -1,4 +1,4 @@
 pytest
 pytest-cov
 confuse
-
+coveralls
