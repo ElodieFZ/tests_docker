@@ -1,6 +1,6 @@
 #!/bin/bash
 
-coverage run --omit=tests/* --source my_module -m my_module.examples 
+coverage run --omit=test/* --source my_module -m my_module.examples 
 coverage report
 
 echo
