@@ -1,3 +1,5 @@
+![Test Status](https://github.com/ElodieFZ/tests_docker/workflows/tests/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/ElodieFZ/tests_docker/badge.svg?branch=master)](https://coveralls.io/github/ElodieFZ/tests_docker?branch=master)
 
 # Github workflow using Docker 
 
