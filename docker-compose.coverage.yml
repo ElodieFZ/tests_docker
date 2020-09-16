@@ -1,17 +1,17 @@
 version: '3.4'
 
 services:
-  unittests:
+  coverage:
     build:
       context: .
-      dockerfile: Dockerfile.unittests
+      dockerfile: Dockerfile.coverage
     environment:
+      COVERALLS_REPO_TOKEN: "${COVERALLS_REPO_TOKEN}"
       CI: "${CI}"
       GITHUB_REF: "${GITHUB_REF}"
       GITHUB_SHA: "${GITHUB_SHA}"
       GITHUB_ACTIONS: "${GITHUB_ACTIONS}"
     volumes:
       - .:/src
-    command: ./run_unittests.sh
-
+    command: ./coverage-tests.sh
 
