@@ -16,7 +16,8 @@ class TestJSON2MMD(unittest.TestCase):
         dict1 = {'A': 1, 'B': 2}
         dict2 = {'A': 2, 'C': 3}
         examples._merge_dicts(dict1, dict2)
-        self.assertEqual(dict1, {'A': 2, 'B': 2, 'C': 3})
+        #self.assertEqual(dict1, {'A': 2, 'B': 2, 'C': 3})
+        self.assertEqual(dict1, {'A': 3, 'B': 2, 'C': 3})
         # nested dictionaries
         dict1 = {'A': 1, 'B': {'B1': 5, 'B2': 6}}
         dict2 = {'A': 2, 'C': 3, 'B': {'B1': 7}}
